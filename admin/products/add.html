@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Thêm mới sản phẩm</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form action="" enctype="multipart/form-data">   
+                <label for="">Ten</label>
+                <input type="text" class="form-control" placeholder="nhap vao ten..." ng-model="inputValue.name">
+      
+                <label for="">gia</label>
+                <input type="number" class="form-control" placeholder="nhap vao gia..." ng-model="inputValue.price"><br>
+
+                <label for="">anh</label>
+                <input type="text" class="form-control" ng-model="inputValue.image">
+
+                <label for="">Mô tả</label>
+                <input type="text" class="form-control" ng-model="inputValue.description">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                </div>
+
+              <div class="text-center">
+                <button class="btn btn-success" ng-click="onSubmit()"><i class="fa-solid fa-plane"></i>Thêm mới</button>
+              </div>
+            </form>
+        </div>
+    </div>
+    

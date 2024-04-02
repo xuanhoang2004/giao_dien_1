@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"crossorigin="anonymous">
+        <link rel="stylesheet" href="font-awesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="../vegetable/css/style.css"> -->
+    </head>
+    <body>
+        <header>
+            <section class="border-bottom">
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col-3 img">
+                            <a href="index.html"> <img src="image/logg 1.png" alt></a>
+                        </div>
+                        <div class="d-flex align-items-center col-5 pr-5">
+                            <div class="input-group">
+                                <input type="text" class="form-control"
+                                    placeholder="Search..."
+                                    aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                                <span class="input-group-text"
+                                    id="basic-addon2">
+                                    <a href="404notfour.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center col-3">
+                            <div class="user media account">
+                                <img src="image/avata_04.webp" class="mr-2" onclick="document.getElementById('id01').style.display='block'" type="button" alt="...">
+                                       <!-- modalogin -->
+                                    <div id="id01" class="modal">
+                                        <form class="modal-content animate" action="/action_page.php" method="post">
+                                            <div class="imgcontainer">
+                                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                <img src="image/img_avatar2.png" alt="Avatar" class="avatar">
+                                            </div>
+                                        
+                                            <div class="container">
+                                            <label for="uname" class=""><b >Username</b></label>
+                                            <input type="text" placeholder="Enter Username" name="uname" required>
+                                        
+                                            <label for="psw"><b>Password</b></label>
+                                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                                
+                                            <button type="submit">Login</button>
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember" class="mb-2"> Remember me <br>
+                                                <b>bạn chưa có tài khoản?</b> <a href="register.html"> Đăng ký</a>
+                                            </label>
+                                            </div>
+                                        
+                                            <div class="row no-gutters pr-3 pl-3" style="background-color:#f1f1f1">
+                                                <div class="col">
+                                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"></button>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="psw">Forgot <a href="fogot.html">password?</a></span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>  
+                                <div class="media-body">
+                                    <i class="mt-0">Xin chào:
+                                        Hoàng</span><br></i>
+                                <span><a href="./admin/index.html">Admin</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center col-1">
+                        <div class="shop">
+                            <span><a href="shop.html"><i class="fa-regular fa-heart"></i><small>2</small></a></span>
+                            <span><a href="giohang.html"><i class="fa-solid fa-bag-shopping"></i><small>8</small></a></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="menu">
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 55px; padding: 0 30px;">
+                            <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="menu2 collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                            <div class="navbar-nav w-100">
+                                <div class="nav-item dropdown dropright">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Casio <i class="fa fa-angle-right float-right mt-1"></i></a>
+                                    <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                        <a href="shop.html" class="dropdown-item">Cassio m-8</a>
+                                        <a href="shop.html" class="dropdown-item">oriten</a>
+                                        <a href="shop.html" class="dropdown-item">hublot</a>
+                                    </div>
+                                </div>
+                                <a href="shop.html" class="nav-item nav-link">casio</a>
+                                <a href="shop.html" class="nav-item nav-link">orient</a>
+                                <a href="shop.html" class="nav-item nav-link">hulot</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <nav class="col-7 navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse"
+                                id="navbarNav">
+                                <ul class="navbar-nav pl-5">
+                                    <li class="nav-item mr-3">
+                                        <a class="nav-link active"
+                                            aria-current="page" href="index.html"><i
+                                                class="fa-solid fa-house mr-2"></i>Trang
+                                            chủ</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a class="nav-link" href="shop.html"><i
+                                                class="fab fa-apple mr-2"></i>Sản
+                                            phẩm</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a class="nav-link" href="lienhe.html"><i
+                                                class="fa fa-bell mr2"></i>Liên
+                                            hệ</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a class="nav-link" href="gioithieu.html"><i
+                                                class="fa fa-address-book mr-2"></i>Giới
+                                            thiệu</a>
+                                    </li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="col-2">
+                        <div class="media align-items-center">
+                            <i class=" fa-solid fa-phone-volume mr-3"></i>
+                            <div class="media-body text-left">
+                                <i class="mb-0">Hotline:</i><br>
+                                <i class="mb-0">0964305701</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        
+        <div class="slideshow-container">
+            <img src="image/baner3.jpg">
+            <img src="image/2612-Bonest-Gatti-2.webp" alt>
+            <img src="image/banner-quoc-te-phu-nu-pc.webp">
+        </div>
+        <main class="mb">
+            <div class="text-center mt-3 text-uppercase">
+                <h2>Các thương hiệu nổi tiếng</h2>
+            </div>
+            <div class="ringring">
+                <div class="zalo-ben-phai">
+                    <div class="hotline-phone-ring">
+                        <div class="hotline-phone-ring-circle"></div>
+                        <div class="hotline-phone-ring-circle-fill"></div>
+                        <div class="hotline-phone-ring-img-circle"> <a
+                                href="404notfour.html"
+                                class="pps-btn-img"><img
+                                    src="image/z5226324648134_bc49323740d9107c8271ec2a4190dd02.jpg" /></a></div>
+                    </div> <a href></a>
+                </div>
+
+                <div class="hotline-phone-ring-wrap" id="hotline-phone-1">
+                    <div class="hotline-phone-ring">
+                        <div class="hotline-phone-ring-circle"></div>
+                        <div class="hotline-phone-ring-circle-fill"></div>
+                        <div class="hotline-phone-ring-img-circle"> <a
+                                href="tel:0966694210" class="pps-btn-img"> <i
+                                    class="text-white fa-solid fa-phone-volume"></i>
+                            </a></div>
+                    </div>
+                    <div class="hotline-bar"> <a href="tel:0966694210"> <span
+                                class="text-hotline">0966694210</span>
+                        </a></div>
+                </div>
+            </div>
+            <div class="categorys">
+                <div class="row">
+                    <div class="col">
+                        <p><img class="firm" src="image/Orient.png" alt /></p>
+                    </div>
+                    <div class="col">
+                        <p><img class="firm" src="image/Orient.png" alt /></p>
+                    </div>
+                    <div class="col">
+                        <p><img class="firm" src="image/Orient.png" alt /></p>
+                    </div>
+                    <div class="col">
+                        <p><img class="firm" src="image/Orient.png" alt /></p>
+                    </div>
+                    <div class="col">
+                        <p><img class="firm" src="image/Orient.png" alt /></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container bner2">
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><img src="image/2612-Bonest-Gatti-2.webp" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="https://wscdn.vn/upload/image/2211-BLACK-GiAM-thang-12.webp" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dưới banner2 -->
+            <div class="container-fluid pt-5 border-bottom">
+                <div class="row px-xl-5 pb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                            <h1 class="fa fa-check text-success m-0 mr-3"></h1>
+                            <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                            <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                            <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                            <h1 class="fas fa-exchange-alt text-warning m-0 mr-3"></h1>
+                            <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                            <h1 class="fa fa-phone-volume text-danger m-0 mr-3"></h1>
+                            <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product1 -->
+            <div class="container-fluid pt-5 pb-3" >
+                <div class="dieuhuong mb-3 ml-5 mt-2 ">
+                    <h2 class="text-uppercase"> <i class="fa fa-grip-lines-vertical mr-2"></i>Sản phẩm khuyến mại</h2>
+                </div>
+               
+                <div class="row row-cols-5 px-xl-5">
+                    <div class="col pb-1">
+                        <div class="product-small bg-light mb-4">
+                            <div class="product-anh position-relative overflow-hidden">
+                                <img class="img-fluid"src="https://dangquangwatch.vn/upload/product_small/1664776886_1198992371_114954084_%C4%91%E1%BB%93ng-h%E1%BB%93-%C4%91%C4%83ng-quang32.jpg" alt>
+                                <img src="./image/dong-ho-nu-chinh-hang6-2094874441.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$183.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                    <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                    <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-small bg-light mb-4">
+                            <div class="product-anh position-relative overflow-hidden">
+                                <img class="img-fluid"src="https://wscdn.vn/400x400/upload/image/OP89322AGSR-N-1.webp" alt>
+                                <img src="https://dangquangwatch.vn/upload/product_small/431556183_dong_ho_nam_ca_mtp_1275d_1adfjpg_1628214580.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                    <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                    <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col pb-1">
+                        <div class="product-small bg-light mb-4">
+                            <div class="product-anh position-relative overflow-hidden">
+                                <img class="img-fluid"src="https://wscdn.vn/upload/image/L2-1660492967-15946984.webp" alt>
+                                <img src="https://dangquangwatch.vn/upload/product_small/edifice_casio_ca_efr_526l_7avudfjpg_1628060035-692623484.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                    <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                    <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-small bg-light mb-4">
+                            <div class="product-anh position-relative overflow-hidden">
+                                <img class="img-fluid"src="https://wscdn.vn/400x400/upload/original-image/1-KHUNG-SP-1713613917-2013531959.jpg" alt>
+                                <img src="https://dangquangwatch.vn/upload/product_small/407096120_dong-ho-thoi-trang30.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                    <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                    <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-small bg-light mb-4">
+                            <div class="product-anh position-relative overflow-hidden">
+                                <img class="img-fluid"src="./image/kk.jpeg" alt>
+                                <img src="https://dangquangwatch.vn/upload/product_small/edifice_casio_ca_efr_526l_7avudfjpg_1628060035-692623484.jpg" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                    <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                    <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pr2">
+                    <div class="row">
+                        <div class="col pb-1">
+                            <div class="product-small bg-light mb-4">
+                                <div class="product-anh position-relative overflow-hidden">
+                                    <img class="img-fluid"src="https://dangquangwatch.vn/upload/product_small/1664776886_1198992371_114954084_%C4%91%E1%BB%93ng-h%E1%BB%93-%C4%91%C4%83ng-quang32.jpg" alt>
+                                    <img src="./image/dong-ho-nu-chinh-hang6-2094874441.jpg" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="product-name h5 text-decoration-none "
+                                        href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>$123.00</h5><h6
+                                            class="text-muted ml-2"><del>$123.00</del></h6>
+                                    </div>
+                                    <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                        <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                        <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-1">
+                            <div class="product-small bg-light mb-4">
+                                <div class="product-anh position-relative overflow-hidden">
+                                    <img class="img-fluid"src="https://wscdn.vn/400x400/upload/original-image/uploads/collection1/OP990-45ADGS-GL-X-1-1654832217252.jpg" alt>
+                                    <img src="https://dangquangwatch.vn/upload/product_small/dong-ho-nu-thoi-trang13-1022738594.jpg" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="product-name h5 text-decoration-none "
+                                        href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>$123.00</h5><h6
+                                            class="text-muted ml-2"><del>$123.00</del></h6>
+                                    </div>
+                                    <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                        <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                        <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-1">
+                            <div class="product-small bg-light mb-4">
+                                <div class="product-anh position-relative overflow-hidden">
+                                    <img class="img-fluid"src="https://wscdn.vn/upload/image/L2-1660492967-15946984.webp" alt>
+                                    <img src="https://dangquangwatch.vn/upload/product_small/dong-ho-nu-thoi-trang13-1022738594.jpg" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="product-name h5 text-decoration-none "
+                                        href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>$123.00</h5><h6
+                                            class="text-muted ml-2"><del>$123.00</del></h6>
+                                    </div>
+                                    <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                        <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                        <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-1">
+                            <div class="product-small bg-light mb-4">
+                                <div class="product-anh position-relative overflow-hidden">
+                                    <img class="img-fluid"src="./image/kk.jpeg" alt>
+                                    <img src="https://dangquangwatch.vn/upload/product_small/dong-ho-nu-thoi-trang13-1022738594.jpg" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="product-name h5 text-decoration-none "
+                                        href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>$123.00</h5><h6
+                                            class="text-muted ml-2"><del>$123.00</del></h6>
+                                    </div>
+                                    <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                        <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                        <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-1">
+                            <div class="product-small bg-light mb-4">
+                                <div class="product-anh position-relative overflow-hidden">
+                                    <img class="img-fluid"src="https://wscdn.vn/400x400/upload/original-image/uploads/collection1/OP990-45ADGS-GL-X-1-1654832217252.jpg" alt>
+                                    <img src="https://dangquangwatch.vn/upload/product_small/dong-ho-nu-thoi-trang13-1022738594.jpg" alt="">
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="product-name h5 text-decoration-none "
+                                        href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>$123.00</h5><h6
+                                            class="text-muted ml-2"><del>$123.00</del></h6>
+                                    </div>
+                                    <div class="pr1 d-flex align-items-center justify-content-around  mt-2">
+                                        <small class="sao fa fa-star text-primary mr-1">    <small class="text-dark">(5.0)</small></small>
+                                        <a href="giohang.html" class=""><i class="fa fa-shopping-cart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button  class="more btn1">Xem thêm</button>
+            </div>
+            
+            <!-- Products 2 -->
+            <div class="container-fluid pt-5 pb-3">
+                <div class="dieuhuong mb-3 ml-5 mt-2 text-danger">
+                    <h2 class="text-uppercase"> <i class="fa fa-grip-lines-vertical mr-2"></i>Sản phẩm bán chạy</h2>
+                </div>
+               
+                <div class="row row-cols-5 px-xl-5">
+                    <div class="col pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div
+                                class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100"
+                                    src="./image/kk.jpeg" alt>
+                                <div class="product-action">
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i
+                                            class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="far fa-heart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-sync-alt"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none" href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                     <h5>$123.00</h5>
+                                     <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="sao fa fa-star text-primary mr-1"></small>
+                                    <small class="sao fa fa-star text-primary mr-1"></small>
+                                    <small class="sao fa fa-star text-primary mr-1"></small>
+                                    <small class="sao fa fa-star text-primary mr-1"></small>
+                                    <small class="sao fa fa-star-half-alt text-primary mr-1"></small>
+                                    <small>(2.7k)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div
+                                class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100"
+                                    src="./image/kk.jpeg" alt>
+                                <div class="product-action">
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i
+                                            class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="far fa-heart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-sync-alt"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio - Nam MTP-V001GL-7BUDF Size 38mm</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mb-1">
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star-half-alt text-primary mr-1"></small>
+                                    <small>(2.7k)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div
+                                class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100"
+                                    src="./image/kk.jpeg" alt>
+                                <div class="product-action">
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i
+                                            class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="far fa-heart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-sync-alt"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href>Citizen Tsuyosa NJ0154-80H – Automatic (Tự Động)</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mb-1">
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao far fa-star text-primary mr-1"></small>
+                                    <small>(99)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div
+                                class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100"
+                                    src="./image/hh.jpeg" alt>
+                                <div class="product-action">
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i
+                                            class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="far fa-heart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-sync-alt"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href="productDetail.html">Casio World Time AE-1200WHD-1AVDF – Nam  Quartz (Pin) – Mặt Số 45 mm, Bộ Bấm Giờ, Chống</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mb-1">
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao far fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao far fa-star text-primary mr-1"></small>
+                                    <small>(20)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div
+                                class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100"
+                                    src="./image/hh.jpeg" alt>
+                                <div class="product-action">
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i
+                                            class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="far fa-heart"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-sync-alt"></i></a>
+                                    <a class="btn btn-outline-dark btn-square"
+                                        href><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="product-name h5 text-decoration-none "
+                                    href>Tissot Le Locle T006.407.16.033.00 – Nam – Automatic (Tự Động) – Mặt Số 39.3mm, Trữ Cót 80</a>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5><h6
+                                        class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-center mb-1">
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star text-primary mr-1"></small>
+                                    <small
+                                        class="sao fa fa-star-half-alt text-primary mr-1"></small>
+                                    <small>(99)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="more">Xem thêm</button>
+            </div>
+            <!-- Products End -->
+        </main>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+            <div class="row px-xl-5 pt-5">
+                <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                    <h5 class="text-secondary text-uppercase mb-4">Get In
+                        Touch</h5>
+                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt
+                        sed clita kasd clita et et dolor sed dolor. Rebum tempor
+                        no vero est magna amet no</p>
+                    <p class="mb-2"><i
+                            class="text-warning fa fa-map-marker-alt text-primary mr-3"></i>Số 4 Quang Trung Hà Đông Hà Nội</p>
+                    <p class="mb-2"><i
+                            class=" fa fa-envelope text-primary mr-3"></i>Xuanhoangg2004@gmail.com</p>
+                    <p class="mb-0"><i
+                            class="text-warning fa fa-phone-alt text-primary mr-3"></i>0966694210</p>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 mb-5">
+                            <h5 class="text-secondary text-uppercase mb-4">Trang chủ</h5>
+                            <div
+                                class="d-flex flex-column justify-content-start">
+                                <a class="text-secondary mb-2" href="index.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Trang chủ</a>
+                               
+                                <a class="text-secondary mb-2" href="shop.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Shop
+                                    Detail</a>
+                                <a class="text-secondary mb-2" href="thanhtoan.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Shopping
+                                    Cart</a>
+                                <a class="text-secondary mb-2" href=""><i
+                                        class="fa fa-angle-right mr-2"></i>Checkout</a>
+                                <a class="text-secondary" href="lienhe.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Contact
+                                    Us</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="text-secondary text-uppercase mb-4">Tài khoản</h5>
+                            <div
+                                class="d-flex flex-column justify-content-start">
+                                <a class="text-secondary mb-2" href="index.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Trang chủ</a>
+                               
+                                <a class="text-secondary mb-2" href="shop.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Shop
+                                    Detail</a>
+                                <a class="text-secondary mb-2" href="thanhtoan.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Shopping
+                                    Cart</a>
+                                <a class="text-secondary mb-2" href=""><i
+                                        class="fa fa-angle-right mr-2"></i>Checkout</a>
+                                <a class="text-secondary" href="lienhe.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Contact
+                                    Us</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <h5
+                                class="text-secondary text-uppercase mb-4">BẢN TIN</h5>
+                            <p>Duo stet tempor ipsum sit amet magna ipsum tempor
+                                est</p>
+                            <form action>
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                        placeholder="Your Email Address">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary">Sign
+                                            Up</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <h6
+                                class="text-secondary text-uppercase mt-4 mb-3">Follow
+                                Us</h6>
+                            <div class="d-flex">
+                                <a class="btn btn-warning btn-square mr-2"
+                                    href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-square mr-2"
+                                    href="#"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-danger btn-square mr-2"
+                                    href="#"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary btn-square mr-2"
+                                    href="#"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top mx-xl-5 py-4"
+                style="border-color: rgba(256, 256, 256, .1) !important;">
+                <div class="col-md-6 px-xl-0">
+                    <p class="mb-md-0 text-center text-md-left text-secondary">
+                        &copy; <a class="text-primary" href="#">Domain</a>. AllRights Reserved. Designedby
+                        <a class="text-primary" href>Xuân Hoàng</a>
+                        <br>Distributed By: <a href="#"target="_blank">xuanhoangg2004@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-6 px-xl-0 text-center text-md-right">
+                    <img class="img-fluid" src="img/payments.png" alt>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>

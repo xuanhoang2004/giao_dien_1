@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Sửa sản phẩm</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form action="">    
+                <label for="">Ten</label>
+                <input type="text" class="form-control" ng-model="product.name" >
+        
+                <label for="">gia</label>
+                <input type="number" class="form-control" ng-model="product.price" ><br>
+                
+                <label for="">Anh</label>
+                <input type="text" ng-model="product.image" class="form-control"><br>
+
+                <label for="">Mô tả</label>
+                <input type="text" class="form-control" ng-model="product.description" >  
+            
+              <div class="text-center">
+                <button class="btn btn-success mt-2" ng-click="onSubmit()">them</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
